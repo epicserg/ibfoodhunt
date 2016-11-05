@@ -3,14 +3,13 @@ package foodhunt
 
 import java.net.URL
 import javax.net.ssl.HttpsURLConnection
+import java.io.InputStream
 
 import net.ruippeixotog.scalascraper.browser.JsoupBrowser
 import net.ruippeixotog.scalascraper.model.Element
 import net.ruippeixotog.scalascraper.dsl.DSL._
 import net.ruippeixotog.scalascraper.dsl.DSL.Extract._
 import net.ruippeixotog.scalascraper.dsl.DSL.Parse._
-
-import scala.sys.process.processInternal.InputStream
 
 
 /**
