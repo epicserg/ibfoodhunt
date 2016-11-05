@@ -1,0 +1,28 @@
+apply plugin: 'scala'
+apply plugin: 'idea'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'org.scala-lang', name: 'scala-library', version: '2.11.0'
+    //compile group: 'org.scala-lang.modules', name: 'scala-xml_2.12.0-M3', version: '1.0.5'
+    compile group: 'junit', name: 'junit', version: '4.12'
+
+    compile group: 'net.ruippeixotog', name: 'scala-scraper_2.11', version: '1.1.0'
+
+}
+
+sourceSets {
+    main {
+        scala {
+            srcDirs = ['src']
+        }
+    }
+    test {
+        scala {
+            srcDirs = ['test']
+        }
+    }
+}
